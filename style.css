@@ -10,7 +10,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .app{
   width: 100%;
@@ -19,16 +18,12 @@ body{
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgb(51, 51, 51);
-
 }
 h1{
   color: antiquewhite;
   text-align: center;
 }
-#total{
-  color: antiquewhite;
-}
-#completed{
+#total, #completed{
   color: antiquewhite;
 }
 .counters{
@@ -41,14 +36,13 @@ h1{
   display: flex;
   justify-content: center;
   gap: 8px;
-   margin: 20px 0px 15px 0px;
+  margin: 20px 0px 15px 0px;
 }
 #taskInput{
   flex: 1;
   outline: none;
   font-size: 16px;
-  padding: 12px 12px;
-  border: none;
+  padding: 12px;
   border: 1px solid rgb(189, 189, 189);
   border-radius: 10px;
 }
@@ -62,7 +56,6 @@ h1{
 #addbtn:hover{
   background-color: rgb(134, 198, 200);
   transition: background 0.3s ease;
-
 }
 .task-list{
   list-style: none;
@@ -73,12 +66,11 @@ h1{
 .task{
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
-  background-color: green;
-  padding: 10px 10px 10px 10px;
-  border: none;
   border-radius: 10px;
+  background-color: green;
+  padding: 10px;
   align-items: center;
+  word-break: break-word;
 }
 .buttons{
   display: flex;
@@ -88,14 +80,14 @@ h1{
   border: none;
   font-size: medium;
   border-radius: 10px;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   background-color: rgb(29, 75, 29);
   cursor: pointer;
   color: antiquewhite;
 }
 .del-btn{
   font-size: medium;
-  padding: 8px 12px 8px 12px;
+  padding: 8px 12px;
   border-radius: 10px;
   background-color: rgb(191, 18, 18);
   border: none;
@@ -115,4 +107,34 @@ h1{
   opacity: 0.7;
 }
 
-
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .app{
+    padding: 15px;
+    border-radius: 15px;
+  }
+  #taskInput{
+    font-size: 14px;
+    padding: 10px;
+  }
+  #addbtn{
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .done-btn, .del-btn{
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .taskName{
+    font-size: medium;
+    max-width: 140px;
+  }
+  .task-input{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .buttons{
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
