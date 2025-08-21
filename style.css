@@ -109,6 +109,10 @@ h1{
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 480px) {
+
+  body{
+    font-family: cursive;
+  }
   .app{
     padding: 15px;
     margin: 15px;
