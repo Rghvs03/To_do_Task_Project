@@ -111,7 +111,7 @@ h1{
 @media (max-width: 480px) {
 
   body{
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .app{
     padding: 15px;
